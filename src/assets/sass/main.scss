@@ -1,0 +1,42 @@
+// @import "lib/custom";
+// @import "~bootstrap/scss/bootstrap";
+
+
+@import "lib/custom";
+
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+@import "~bootstrap/scss/utilities";
+
+@import "~bootstrap/scss/_grid";
+
+
+
+@import "~swiper/swiper";
+
+@import 'global/fonts';
+@import 'global/vars';
+@import 'global/default';
+@import 'global/utils';
+
+
+@import 'shared/header';
+@import 'shared/footer';
+
+
+@import 'modules/slideshow';
+@import 'modules/section';
+@import 'modules/categorias-producto';
+@import 'modules/grid-producto';
+@import 'modules/categorias-recetas';
+@import 'modules/grid-rectas-categoria';
+@import 'modules/rectas-single';
+@import 'modules/sabrotips';
+@import 'modules/expendios';
+@import 'modules/contacto';
+@import 'modules/ventas';
+@import 'modules/interpec';
+@import 'modules/privacidad';
+
+

@@ -1,0 +1,113 @@
+.container-fluid {
+    background-color: white;
+    position: relative;
+    z-index: 100;
+}
+
+.title_sabro.t_bigger {
+    h2 {
+        font-size: 3.6em;
+
+        @include media-breakpoint-only(sm) {
+            font-size: 3.3em;
+        }
+    }
+}
+
+.title_sabro {
+    position: relative;
+    display: inline-block;
+
+    @include media-breakpoint-only(sm) {
+        width: 100%;
+    }
+
+    h2 {
+        font-family: "Blog";
+        font-size: 2.7em;
+        text-transform: capitalize;
+        position: relative;
+
+        @include media-breakpoint-only(sm) {
+            width: 100%;
+            font-size: 2.2em;
+            line-height: 1.3;
+        }
+    }
+    .menu_selected {
+        position: absolute;
+        bottom: 30px;
+        left: 50%;
+        transform: translate(-50%, 0);
+        width: 160px;
+
+        @include media-breakpoint-only(sm) {
+            bottom: 8px;
+            width: 47%;
+        }
+    }
+    .salpicon {
+        width: 30px;
+        margin-left: 8px;
+        position: relative;
+        top: -1px;
+
+        @include media-breakpoint-only(sm) {
+            width: 20px;
+            margin-left: 8px;
+            position: relative;
+            top: -5px;
+        }
+    }
+}
+p.paragraph_sabro {
+    width: 100%;
+    max-width: 500px;
+    margin: 20px auto;
+    font-size: 1.2em;
+
+    @include media-breakpoint-only(sm) {
+        font-size: 0.8em;
+    }
+}
+
+p.paragraph_sabro.larger {
+    max-width: 800px;
+}
+
+
+#calidad{
+    p.paragraph_sabro {
+        font-size: 1em;
+    }
+}
+
+.bullet{
+    cursor: pointer;
+}
+
+#calidad {
+    .title_sabro {
+        .menu_selected {
+            bottom: 20px;
+            width: 160px;
+
+            @include media-breakpoint-only(sm) {
+                bottom: 9px;
+            }
+        }
+        .salpicon {
+            width: 30px;
+            margin-left: 8px;
+            position: relative;
+            top: -1px;
+
+            @include media-breakpoint-only(sm) {
+                width: 20px;
+                margin-left: 8px;
+                position: relative;
+                top: -5px;
+            }
+        }
+    }
+}

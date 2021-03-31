@@ -1,0 +1,241 @@
+.slideshow_wrapper {
+    position: relative;
+    overflow: hidden;
+    height: 600px;
+
+    @include media-breakpoint-only(sm) {
+        height: 500px;
+    }
+
+    .swiper-wrapper {
+        .swiper-slide {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 600px;
+
+            @include media-breakpoint-only(sm) {
+                height: 500px;
+            }
+
+            .media_container {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                background-position: center;
+                background-size: cover;
+                overflow: hidden;
+
+                .bgvideo {
+                    display: block;
+                    height: 100vh;
+                    object-fit: cover;
+                    width: 100%;
+                }
+
+                .overlay {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background-color: rgba(0, 0, 0, 0.1);
+                }
+            }
+
+            .info_container {
+                width: 80%;
+                position: relative;
+                margin-top: -80px;
+
+                @include media-breakpoint-only(sm) {
+                    margin-top: -30px;
+                }
+
+                h1.tile {
+                    margin: 0;
+                    font-family: "Blog";
+                    font-size: 5em;
+                    text-transform: capitalize;
+                    color: white;
+                    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.35);
+
+                    @include media-breakpoint-only(sm) {
+                        font-size: 2.4em;
+                        line-height: 1.5em;
+                        margin-bottom: 20px;
+                    }
+
+                    img {
+                        width: 39px;
+                        margin-left: 13px;
+                        position: relative;
+                        top: -13px;
+
+                        @include media-breakpoint-only(sm) {
+                            width: 27px;
+                            margin-left: 0;
+                            top: -32px;
+                            position: absolute;
+                            left: -17px;
+                            transform: rotate(-101deg);
+                        }
+                    }
+                }
+
+                p.description {
+                    margin: -20px 0 0 0;
+                    font-size: 1.5em;
+                    width: 100%;
+                    max-width: 700px;
+                    margin-bottom: 45px;
+                    color: white;
+                    font-weight: 400;
+                    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.35);
+
+                    @include media-breakpoint-only(sm) {
+                        font-size: 0.9em;
+                    }
+                }
+
+                a.cta {
+                    background-color: $orange-color;
+                    padding: 10px 20px;
+                    border-radius: 20px;
+                    color: white;
+                    text-transform: uppercase;
+                    text-decoration: none;
+                    font-weight: 600;
+                    font-size: 0.8em;
+
+                    @include media-breakpoint-only(sm) {
+                        padding: 9px 16px;
+                        font-size: 0.7em;
+                    }
+                }
+            }
+        }
+    }
+
+    .scroll_icon {
+        position: absolute;
+        bottom: 50px;
+        left: 50%;
+        transform: translate(-50%, 0);
+        cursor: pointer;
+        z-index: 9;
+
+        svg {
+            width: 40px;
+            fill: none;
+            stroke: #ffffff;
+            stroke-width: 2;
+
+            @include media-breakpoint-only(sm) {
+                width: 28px;
+            }
+
+            polyline {
+                fill: none;
+                stroke: #ffffff;
+                stroke-width: 2;
+            }
+        }
+    }
+
+    #planicie {
+        visibility: hidden;
+    }
+
+    .swiper_navigation {
+        position: absolute;
+        width: 100%;
+        top: 35%;
+        left: 0;
+        transform: translate(0, -50%);
+        z-index: 99;
+        display: flex;
+        justify-content: space-between;
+
+        @include media-breakpoint-only(sm) {
+            top: 50%;
+        }
+
+        .nav_left {
+            margin-left: 20px;
+            cursor: pointer;
+            width: 20px;
+            outline: none;
+
+            @include media-breakpoint-only(sm) {
+                width: 10px;
+                margin-left: 10px;
+            }
+
+            img {
+                transform: rotate(180deg);
+            }
+        }
+        .nav_right {
+            margin-right: 20px;
+            width: 20px;
+            outline: none;
+            cursor: pointer;
+            @include media-breakpoint-only(sm) {
+                width: 10px;
+                margin-right: 10px;
+            }
+        }
+    }
+}
+
+.top_section_mask {
+    position: absolute;
+    top: -183px;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+    height: 200px;
+    pointer-events: none;
+
+    @include media-breakpoint-only(sm) {
+        top: -197px;
+    }
+
+    svg {
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        fill: white;
+    }
+}
+
+.slideshow_paragraph {
+    width: 500px;
+    overflow: hidden;
+    margin: 10px auto 80px;
+
+    @include media-breakpoint-only(sm) {
+        width: 100%;
+    }
+
+    .swiper-pagination {
+        display: flex;
+        justify-content: center;
+    }
+
+    .bullet {
+        width: 12px;
+        height: 12px;
+        border-radius: 20px;
+        margin-left: 10px;
+    }
+    .swiper-pagination-bullet {
+        background-color: white;
+        border: 2px solid #c2d1d9;
+    }
+    .swiper-pagination-bullet-active {
+        background-color: $orange_color;
+        border: 0 solid #c2d1d9;
+    }
+}

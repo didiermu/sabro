@@ -83,7 +83,12 @@ footer {
             bottom: 20px;
             font-size: 0.7em;
             text-align: center;
-
+            
+            a{
+                color: inherit;
+                text-decoration: none;
+            }
+            
             @include media-breakpoint-only(sm) {
                 bottom: 19px;
             }

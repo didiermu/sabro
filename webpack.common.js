@@ -161,6 +161,12 @@ module.exports = {
             template: './src/views/sabrohuevo/ventas.pug',
             chunks: ['sabro']
         }),
+        new HtmlWebpackPlugin({
+            filename: 'huevo/404.html',
+            hash: false,
+            template: './src/views/sabrohuevo/404.pug',
+            chunks: ['sabro']
+        }),
 
 
 
@@ -213,7 +219,12 @@ module.exports = {
             template: './src/views/aliamsa/ventas.pug',
             chunks: ['sabro']
         }),
-        
+        new HtmlWebpackPlugin({
+            filename: 'aliamsa/404.html',
+            hash: false,
+            template: './src/views/aliamsa/404.pug',
+            chunks: ['sabro']
+        }),
         
         
         
@@ -246,7 +257,12 @@ module.exports = {
             template: './src/views/interpec/ventas.pug',
             chunks: ['sabro']
         }),
-
+        new HtmlWebpackPlugin({
+            filename: 'interpec/404.html',
+            hash: false,
+            template: './src/views/interpec/404.pug',
+            chunks: ['sabro']
+        }),
 
 
 

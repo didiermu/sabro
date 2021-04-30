@@ -101,6 +101,18 @@ module.exports = {
             template: './src/views/sabropollo/404.pug',
             chunks: ['sabro']
         }),
+        new HtmlWebpackPlugin({
+            filename: 'pollo/sabro-app-ventas.html',
+            hash: false,
+            template: './src/views/sabropollo/sabro-app-ventas.pug',
+            chunks: ['sabro']
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'pollo/sabro-app.html',
+            hash: false,
+            template: './src/views/sabropollo/sabro-app.pug',
+            chunks: ['sabro']
+        }),
 
         /////////////////////////////////////////////////
         /////////////////////////////////////////////////

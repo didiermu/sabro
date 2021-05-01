@@ -310,7 +310,7 @@ header .header_inner a.sabrocasa{
         width: 120px;
         height: 100%;
         background-size: contain;
-        background-image: url("assets/img/sabro_casa_btn.png");
+        background-image: url("../assets/img/sabro_casa_btn.png");
 
         @include media-breakpoint-down(sm){
             width: 100%;
